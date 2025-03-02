@@ -42,7 +42,7 @@ namespace PoScSe
                 using (Graphics graphics = Graphics.FromImage(bitmap))
                 {
                     IntPtr hdc = GetDC(hWnd);
-                    graphics.CopyFromScreen(rect.Left+7, rect.Top, 14, 7, new Size(width, height), CopyPixelOperation.SourceCopy);
+                    graphics.CopyFromScreen(rect.Left, rect.Top, 0, 0, new Size(width, height), CopyPixelOperation.SourceCopy);
                     ReleaseDC(hWnd, hdc);
                 }
                 string fileName = Path.Combine(saveDirectory, $"screenshot_{name}.png");
