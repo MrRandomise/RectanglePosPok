@@ -1,146 +1,158 @@
-using Gma.System.MouseKeyHook;
-using System.Xml.Linq;
+using Newtonsoft.Json;
 
-namespace PoScSe
+
+namespace DrawJson
 {
-    public partial class MainForm : Form
+    public partial class Form1 : Form
     {
-        private NotifyIcon notifyIcon;
-        private int _screenshotCounter = 0;
-        private Screenshot _screenshot = new Screenshot();
-        private IKeyboardMouseEvents _globalHook;
-        private IniFile _iniFile = new IniFile();
-        public MainForm()
+        private DrawAndMoveRec Draw;
+        private Image image;
+        private ResizeImage Resize;
+        private ObjectRectangle rectangle;
+        private bool activeDraw = false;
+        private DirectoryInfo screenDir;
+        private FileInfo[] screen;
+        private int pictureIndex = -1;
+        private PanelsObject panelsObject;
+        private WorkFromFile workFile;
+
+        public Form1()
         {
             InitializeComponent();
-            // Конфигурация NotifyIcon
-            notifyIcon = new NotifyIcon();
-            notifyIcon.Icon = SystemIcons.Application; // Замените на свою иконку
-            notifyIcon.Visible = true;
-            notifyIcon.MouseClick += NotifyIcon_MouseClick;
-
-            //Получили текущий счетчик названий
-            _screenshotCounter = int.Parse(_iniFile.Read("Config", "CurrentNum"));
-            // Создаем комбинацию клавиш
-            // Инициализация глобального хука
-            _globalHook = Hook.GlobalEvents();
-            _globalHook.KeyDown += GlobalHook_KeyDown;
-
-            // Создание контекстного меню
-            ContextMenuStrip contextMenu = new ContextMenuStrip();
-            contextMenu.Items.Add("Открыть", null, Open_Click);
-            contextMenu.Items.Add("Выход", null, Exit_Click);
-            notifyIcon.ContextMenuStrip = contextMenu;
+            DoubleBuffered = true;
+            Draw = new DrawAndMoveRec();
+            Resize = new ResizeImage();
+            panelsObject = new PanelsObject();
+            workFile = new WorkFromFile();
+        }
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            panelsObject.PlayerPanel.Add(Player1);
+            panelsObject.AddPanel(LeftTopPanel);
+            Player1.Visible = false;
+            screenDir = new DirectoryInfo(@"C:\Users\dmitr\Desktop\Poker\Data\");
+            screen = screenDir.GetFiles("*.png", SearchOption.AllDirectories);
+            NextPicture(1);
+            pictureBox1.Refresh();
         }
 
-        private void GlobalHook_KeyDown(object sender, KeyEventArgs e)
+        private void AddPlayerRectangles_MouseClick(object sender, MouseEventArgs e)
         {
-            // Проверяем сочетание "Alt + NumPad1"
-            if (e.Alt && e.KeyCode == Keys.NumPad1)
+            panelsObject.ShowPanel(UpdatePicture, pictureBox1.Image);
+            UpdatePicture();
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            var offset = new Point(e.X, e.Y);
+            int layer = 99999999;
+            foreach (var rec in panelsObject.objRectangle)
             {
-                // Создаем папку, если она не существует
-                if (!Directory.Exists(SaveDirField.Text))
+                if (rec.Click(offset, layer))
                 {
-                    Directory.CreateDirectory(SaveDirField.Text);
+                    rectangle = rec;
+                    layer = rectangle.Layer;
                 }
-                _screenshot.TakeScreenshot(SaveDirField.Text, GetName());
+            }
+            if (rectangle != null)
+            {
+                rectangle.Active = true;
+                activeDraw = true;
+                UpdatePicture();
             }
         }
 
-        //Получаем имя нового скриншота
-        private string GetName()
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (int.Parse(_iniFile.Read("Config", "SaveType")) == 1)
+            if (activeDraw)
             {
-                return ChangeCurrentNum();
+                rectangle.Move(e.X, e.Y);
+                Preview();
+                UpdatePicture();
+            }
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (activeDraw)
+            {
+                activeDraw = false;
+                rectangle.Active = false;
+                rectangle = null;
+                UpdatePicture();
+            }
+        }
+
+        private void Next_Click(object sender, EventArgs e)
+        {
+            NextPicture(1);
+            if (pictureIndex == screen.Length)
+            {
+                Next.Enabled = false;
             }
             else
             {
-                return DateTime.Now.ToString();
+                Next.Enabled = true;
             }
+            Prev.Enabled = true;
+            pictureBox1.Refresh();
         }
 
-        // Обработчик клика на иконку
-        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
+        private void Prev_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            NextPicture(-1);
+            if (pictureIndex == 0)
             {
-                Open_Click(sender, e); // Открывает форму по левому клику
-            }
-        }
-
-        private void Open_Click(object sender, EventArgs e)
-        {
-            Visible = true;
-            WindowState = FormWindowState.Normal; // Восстановить состояние окна
-        }
-
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            notifyIcon.Visible = false; // Скрыть иконку
-            _globalHook.Dispose();
-            Application.Exit(); // Завершить приложение
-        }
-
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _globalHook.Dispose();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            SaveDirField.Text = _iniFile.Read("Config", "Dir");
-            var radBut = _iniFile.Read("Config", "SaveType");
-            if (radBut == "1")
-            {
-                NumButton.Checked = true;
+                Prev.Enabled = false;
             }
             else
             {
-                DateButton.Checked = true;
+                Prev.Enabled = true;
             }
-
-            SaveConfig.Enabled = false;
-            Visible = false; // Скрыть форму
-            ShowInTaskbar = false; // Скрыть из панели задач
+            Next.Enabled = true;
         }
 
-        private void MainForm_Resize(object sender, EventArgs e)
+        private void Preview()
         {
-            if (this.WindowState == FormWindowState.Minimized)
+            using (Bitmap bmp = new Bitmap(pictureBox1.Image))
             {
-                // Скрыть форму при сворачивании
-                this.Hide();
+                try
+                {
+                    var newImg = bmp.Clone(
+                rectangle.Rectangle,
+                bmp.PixelFormat);
+                    pictureBox2.Image = newImg;
+                }
+                catch { }
             }
         }
 
-        private void SaveConfig_Click(object sender, EventArgs e)
+        private void NextPicture(int index)
         {
-            _iniFile.Write("Config", "Dir", SaveDirField.Text);
-
-            SaveConfig.Enabled = false;
+            pictureIndex += index;
+            if (pictureIndex <= screen.Length && pictureIndex >= 0)
+            {
+                Resize.ResizeBitmap(screen[pictureIndex].FullName, 970, 700);
+                pictureBox1.Image = Image.FromFile(screen[pictureIndex].FullName);
+                image = pictureBox1.Image;
+                UpdatePicture();
+            }
         }
 
-        private string ChangeCurrentNum()
+        private void UpdatePicture()
         {
-            _screenshotCounter++;
-            _iniFile.Write("Config", "CurrentNum", _screenshotCounter.ToString());
-            return _screenshotCounter.ToString();
+            pictureBox1.Image = Draw.RePaintRectangle(image, panelsObject.objRectangle);
+            pictureBox1.Refresh();
         }
 
-        private void NumButton_MouseCaptureChanged(object sender, EventArgs e)
+        private void SaveSetting_Click(object sender, EventArgs e)
         {
-            SaveConfig.Enabled = true;
-        }
+            var objectInfo = new ObjectInfo(MaxPlayers.Text, screen[pictureIndex].FullName);
 
-        private void DateButton_MouseCaptureChanged(object sender, EventArgs e)
-        {
-            SaveConfig.Enabled = true;
-        }
+            var data = new JsonData(objectInfo, panelsObject.Players);
 
-        private void SaveDirField_TextChanged(object sender, EventArgs e)
-        {
-            SaveConfig.Enabled = true;
+           string jsonString = JsonConvert.SerializeObject(data);
+           workFile.SaveToFile(@"C:\Users\dmitr\Desktop\Poker\config.json", jsonString);
         }
     }
 }
