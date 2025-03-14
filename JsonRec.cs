@@ -20,27 +20,27 @@ namespace DrawJson
     //    }
     //}
 
-    public class ObjectInfo
-    {
-        public string MaxPlayers { get; }
-        public string File { get; }
+    //public class ObjectInfo
+    //{
+    //    public string MaxPlayers { get; }
+    //    public string File { get; }
 
-        public ObjectInfo(string players, string file)
-        {
-            MaxPlayers = players;
-            File = file;
-        }
-    }
+    //    public ObjectInfo(string players, string file)
+    //    {
+    //        MaxPlayers = players;
+    //        File = file;
+    //    }
+    //}
 
-    public class JsonData
-    {
-        public ObjectInfo Info;
-        public List<Players> Players;
+    //public class JsonData
+    //{
+    //    public ObjectInfo Info;
+    //    public List<Players> Players;
 
-        public JsonData(ObjectInfo info, List<Players> data)
-        {
-            Info = info;
-            Players = data;
-        }
-    }
+    //    public JsonData(ObjectInfo info, List<Players> data)
+    //    {
+    //        Info = info;
+    //        Players = data;
+    //    }
+    //}
 }

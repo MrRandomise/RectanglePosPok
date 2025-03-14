@@ -1,53 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Programming\\C#\\DrawJson\\DrawJson\\",
+  "WorkspaceRootPath": "D:\\Programm\\Poker\\RectanglePosPok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\panelsobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:panelsobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\jsonrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:jsonrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\cloneobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:cloneobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\drawandmoverec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:drawandmoverec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|E:\\Programming\\C#\\DrawJson\\DrawJson\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|D:\\Programm\\Poker\\RectanglePosPok\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\resizeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\resizeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:resizeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|e:\\programming\\c#\\drawjson\\drawjson\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\drawandmoverec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:drawandmoverec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\cloneobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:cloneobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\jsonrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:jsonrec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,20 +46,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.cs",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T14:49:15.035Z",
               "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Bookmark",
@@ -87,136 +75,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T07:34:50.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Players.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Players.cs",
-              "RelativeDocumentMoniker": "Players.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Players.cs",
-              "RelativeToolTip": "Players.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T15:15:23.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WorkFromFile.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\WorkFromFile.cs",
-              "RelativeDocumentMoniker": "WorkFromFile.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\WorkFromFile.cs",
-              "RelativeToolTip": "WorkFromFile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:46:28.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JsonRec.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\JsonRec.cs",
-              "RelativeDocumentMoniker": "JsonRec.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\JsonRec.cs",
-              "RelativeToolTip": "JsonRec.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwCcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:19:14.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PanelsObject.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\PanelsObject.cs",
-              "RelativeDocumentMoniker": "PanelsObject.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\PanelsObject.cs",
-              "RelativeToolTip": "PanelsObject.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAowIoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:12:02.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CloneObject.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\CloneObject.cs",
-              "RelativeDocumentMoniker": "CloneObject.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\CloneObject.cs",
-              "RelativeToolTip": "CloneObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:06:57.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ResizeImage.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\ResizeImage.cs",
-              "RelativeDocumentMoniker": "ResizeImage.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\ResizeImage.cs",
-              "RelativeToolTip": "ResizeImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T20:20:52.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DrawAndMoveRec.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\DrawAndMoveRec.cs",
-              "RelativeDocumentMoniker": "DrawAndMoveRec.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\DrawAndMoveRec.cs",
-              "RelativeToolTip": "DrawAndMoveRec.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:44:27.916Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAuwIsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwOYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:41:53.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ObjectRectangle.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\ObjectRectangle.cs",
-              "RelativeDocumentMoniker": "ObjectRectangle.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\ObjectRectangle.cs",
-              "RelativeToolTip": "ObjectRectangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "WorkFromFile.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\WorkFromFile.cs",
+              "RelativeDocumentMoniker": "WorkFromFile.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\WorkFromFile.cs",
+              "RelativeToolTip": "WorkFromFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T19:10:31.999Z"
+              "WhenOpened": "2025-02-21T13:46:28.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "ResizeImage.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\ResizeImage.cs",
+              "RelativeDocumentMoniker": "ResizeImage.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\ResizeImage.cs",
+              "RelativeToolTip": "ResizeImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:20:52.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ObjectRectangle.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\ObjectRectangle.cs",
+              "RelativeDocumentMoniker": "ObjectRectangle.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\ObjectRectangle.cs",
+              "RelativeToolTip": "ObjectRectangle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T19:10:31.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrawAndMoveRec.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\DrawAndMoveRec.cs",
+              "RelativeDocumentMoniker": "DrawAndMoveRec.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\DrawAndMoveRec.cs",
+              "RelativeToolTip": "DrawAndMoveRec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:44:27.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CloneObject.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\CloneObject.cs",
+              "RelativeDocumentMoniker": "CloneObject.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\CloneObject.cs",
+              "RelativeToolTip": "CloneObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T12:06:57.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JsonRec.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\JsonRec.cs",
+              "RelativeDocumentMoniker": "JsonRec.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\JsonRec.cs",
+              "RelativeToolTip": "JsonRec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T13:19:14.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "E:\\Programming\\C#\\DrawJson\\DrawJson\\Form1.Designer.cs",
+              "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAvwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:56:20.259Z"
+              "WhenOpened": "2025-02-17T14:56:20.259Z",
+              "EditorCaption": ""
             }
           ]
         }

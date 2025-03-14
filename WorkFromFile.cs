@@ -1,11 +1,10 @@
-﻿using System.Text.Json;
-
+﻿using Newtonsoft.Json;
 namespace DrawJson
 {
     public  class WorkFromFile
     {
 
-        public void SaveToFile(string path, string data)
+        public void SaveToFile(string path, string data, string name)
         {
             //string json = "{ \"info\" : { \"Players\" : \" "+data.objectInfo.Players+"\", \"File\" : \" "+ @data.objectInfo.File +"\" }";
             //for (int i = 0; i < data.objectData.Count; i++)
@@ -18,15 +17,14 @@ namespace DrawJson
             //}
             //json += "}";
 
-            File.WriteAllText(path, data);
+            File.WriteAllText(path + name + "Max.json", data);
         }
 
-        //public List<ObjectData> LoadFromFile(string path)
-        //{
-        //    string json = File.ReadAllText(path);
-        //    var options = new JsonSerializerOptions { WriteIndented = true };
-        //    var myObj = JsonSerializer.Deserialize<JsonData>(json);
-        //    return myObj.objectData;
-        //}
+        public List<ObjectRectangle> LoadFromFile(string path)
+        {
+            var json = File.ReadAllText(path);
+            var data = JsonConvert.DeserializeObject<List<ObjectRectangle>>(json);
+            return data;
+        }
     }
 }
