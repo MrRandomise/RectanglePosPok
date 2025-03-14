@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using System.Drawing;
 
 namespace DrawJson
 {
@@ -26,7 +25,11 @@ namespace DrawJson
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-            screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table");
+            //screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table\Old\3");
+            //screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table\Old\5");
+            //screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table\Old\6");
+            screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table\Old\8");
+            //screenDir = new DirectoryInfo(@"C:\Users\Dmitry\Desktop\DataSet\Table\Old\9");
             screen = screenDir.GetFiles("*.png", SearchOption.AllDirectories);
             NextPicture(1);
             pictureBox1.Refresh();
@@ -54,7 +57,7 @@ namespace DrawJson
                     activeDraw = true;
                 }
             }
-            if(rectangle != null)
+            if (rectangle != null)
             {
                 UpdatePicture();
                 UpdatePos();
@@ -167,7 +170,7 @@ namespace DrawJson
         {
             rectangles.Clear();
             rectangle = null;
-            var file = @"C:\Users\Dmitry\Desktop\DataSet\" + MaxPlayers.Text + "Max.json";
+            var file = @"C:\Users\Dmitry\Desktop\DataSet\" + LoadMaxPlayers.Text + "Max.json";
             if (File.Exists(file))
             {
                 rectangles = workFile.LoadFromFile(file);
@@ -227,6 +230,11 @@ namespace DrawJson
             rectangles.Remove(rectangle);
             rectangle = null;
             UpdatePicture();
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MessageBox.Show(e.KeyChar.ToString());
         }
     }
 }

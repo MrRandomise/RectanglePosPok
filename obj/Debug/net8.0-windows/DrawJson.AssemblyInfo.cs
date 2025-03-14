@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DrawJson")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba27c75b4d40793db997ed9383366b52bfae1386")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+413f64d5ef63a64882fb5c94d7af88f90ffb1231")]
 [assembly: System.Reflection.AssemblyProductAttribute("DrawJson")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DrawJson")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|D:\\Programm\\Poker\\RectanglePosPok\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:workfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|solutionrelative:objectrectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9A385F3-3FF6-45F4-B3BE-6465370E185B}|DrawJson.csproj|d:\\programm\\poker\\rectanglepospok\\resizeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -81,22 +81,23 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAuwOYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:41:53.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "WorkFromFile.cs",
               "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\WorkFromFile.cs",
               "RelativeDocumentMoniker": "WorkFromFile.cs",
               "ToolTip": "D:\\Programm\\Poker\\RectanglePosPok\\WorkFromFile.cs",
               "RelativeToolTip": "WorkFromFile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:46:28.133Z"
+              "WhenOpened": "2025-02-21T13:46:28.133Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -112,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ObjectRectangle.cs",
               "DocumentMoniker": "D:\\Programm\\Poker\\RectanglePosPok\\ObjectRectangle.cs",
               "RelativeDocumentMoniker": "ObjectRectangle.cs",
@@ -120,8 +121,7 @@
               "RelativeToolTip": "ObjectRectangle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T19:10:31.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T19:10:31.999Z"
             },
             {
               "$type": "Document",

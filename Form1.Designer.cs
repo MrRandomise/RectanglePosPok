@@ -39,6 +39,9 @@
             Next = new Button();
             SaveSetting = new Button();
             LeftTopPanel = new Panel();
+            label3 = new Label();
+            SaveLabel = new Label();
+            MaxPlayers = new ComboBox();
             Player1 = new Panel();
             DeletePlayer = new Button();
             textBox9 = new TextBox();
@@ -51,9 +54,8 @@
             label5 = new Label();
             label2 = new Label();
             label1 = new Label();
-            ImageSize = new Label();
             AddPlayerRectangles = new Button();
-            MaxPlayers = new ComboBox();
+            LoadMaxPlayers = new ComboBox();
             drawAndMoveRecBindingSource = new BindingSource(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -160,14 +162,49 @@
             // LeftTopPanel
             // 
             LeftTopPanel.AutoScroll = true;
-            LeftTopPanel.Controls.Add(Player1);
-            LeftTopPanel.Controls.Add(ImageSize);
-            LeftTopPanel.Controls.Add(AddPlayerRectangles);
+            LeftTopPanel.Controls.Add(label3);
+            LeftTopPanel.Controls.Add(SaveLabel);
             LeftTopPanel.Controls.Add(MaxPlayers);
+            LeftTopPanel.Controls.Add(Player1);
+            LeftTopPanel.Controls.Add(AddPlayerRectangles);
+            LeftTopPanel.Controls.Add(LoadMaxPlayers);
             LeftTopPanel.Location = new Point(3, 3);
             LeftTopPanel.Name = "LeftTopPanel";
             LeftTopPanel.Size = new Size(502, 861);
             LeftTopPanel.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(285, 25);
+            label3.Name = "label3";
+            label3.Size = new Size(61, 15);
+            label3.TabIndex = 172;
+            label3.Tag = "NotIterration";
+            label3.Text = "Загрузить";
+            // 
+            // SaveLabel
+            // 
+            SaveLabel.AutoSize = true;
+            SaveLabel.Location = new Point(11, 25);
+            SaveLabel.Name = "SaveLabel";
+            SaveLabel.Size = new Size(66, 15);
+            SaveLabel.TabIndex = 171;
+            SaveLabel.Tag = "NotIterration";
+            SaveLabel.Text = "Сохранить";
+            // 
+            // MaxPlayers
+            // 
+            MaxPlayers.BackColor = Color.WhiteSmoke;
+            MaxPlayers.DisplayMember = "1";
+            MaxPlayers.DropDownStyle = ComboBoxStyle.DropDownList;
+            MaxPlayers.FormattingEnabled = true;
+            MaxPlayers.Items.AddRange(new object[] { "2", "3", "5", "6", "8", "9" });
+            MaxPlayers.Location = new Point(11, 43);
+            MaxPlayers.Name = "MaxPlayers";
+            MaxPlayers.Size = new Size(172, 23);
+            MaxPlayers.TabIndex = 7;
+            MaxPlayers.ValueMember = "1";
             // 
             // Player1
             // 
@@ -294,15 +331,6 @@
             label1.Tag = "NotIterration";
             label1.Text = "Pos X";
             // 
-            // ImageSize
-            // 
-            ImageSize.AutoSize = true;
-            ImageSize.Location = new Point(193, 54);
-            ImageSize.Name = "ImageSize";
-            ImageSize.Size = new Size(63, 15);
-            ImageSize.TabIndex = 5;
-            ImageSize.Text = "ImageSize:";
-            // 
             // AddPlayerRectangles
             // 
             AddPlayerRectangles.Location = new Point(9, 85);
@@ -313,19 +341,19 @@
             AddPlayerRectangles.UseVisualStyleBackColor = true;
             AddPlayerRectangles.MouseClick += AddPlayerRectangles_MouseClick;
             // 
-            // MaxPlayers
+            // LoadMaxPlayers
             // 
-            MaxPlayers.BackColor = Color.WhiteSmoke;
-            MaxPlayers.DisplayMember = "1";
-            MaxPlayers.DropDownStyle = ComboBoxStyle.DropDownList;
-            MaxPlayers.FormattingEnabled = true;
-            MaxPlayers.Items.AddRange(new object[] { "2", "3", "5", "8", "9" });
-            MaxPlayers.Location = new Point(9, 12);
-            MaxPlayers.Name = "MaxPlayers";
-            MaxPlayers.Size = new Size(448, 23);
-            MaxPlayers.TabIndex = 3;
-            MaxPlayers.ValueMember = "1";
-            MaxPlayers.SelectedIndexChanged += MaxPlayers_SelectedIndexChanged;
+            LoadMaxPlayers.BackColor = Color.WhiteSmoke;
+            LoadMaxPlayers.DisplayMember = "1";
+            LoadMaxPlayers.DropDownStyle = ComboBoxStyle.DropDownList;
+            LoadMaxPlayers.FormattingEnabled = true;
+            LoadMaxPlayers.Items.AddRange(new object[] { "2", "3", "5", "6", "8", "9" });
+            LoadMaxPlayers.Location = new Point(285, 43);
+            LoadMaxPlayers.Name = "LoadMaxPlayers";
+            LoadMaxPlayers.Size = new Size(172, 23);
+            LoadMaxPlayers.TabIndex = 3;
+            LoadMaxPlayers.ValueMember = "1";
+            LoadMaxPlayers.SelectedIndexChanged += MaxPlayers_SelectedIndexChanged;
             // 
             // drawAndMoveRecBindingSource
             // 
@@ -341,6 +369,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Shown += Form1_Shown;
+            KeyPress += Form1_KeyPress;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -360,12 +389,11 @@
         private Panel panel1;
         private Panel panel2;
         private Panel LeftTopPanel;
-        private ComboBox MaxPlayers;
+        private ComboBox LoadMaxPlayers;
         private Panel panel5;
         private Button SaveJson;
         private Button Next;
         private Button SaveSetting;
-        private Label ImageSize;
         private Button AddPlayerRectangles;
         private BindingSource drawAndMoveRecBindingSource;
         private Panel Player1;
@@ -383,5 +411,8 @@
         private PictureBox pictureBox2;
         private Button Prev;
         private Button DeletePlayer;
+        private ComboBox MaxPlayers;
+        private Label label3;
+        private Label SaveLabel;
     }
 }
